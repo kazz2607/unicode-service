@@ -1,0 +1,37 @@
+
+  GET|HEAD  / ........................................................................................................................................ 
+  POST      _ignition/execute-solution ................................. ignition.executeSolution › Spatie\LaravelIgnition › ExecuteSolutionController
+  GET|HEAD  _ignition/health-check ............................................. ignition.healthCheck › Spatie\LaravelIgnition › HealthCheckController
+  POST      _ignition/update-config .......................................... ignition.updateConfig › Spatie\LaravelIgnition › UpdateConfigController
+  GET|HEAD  api/user ................................................................................................................................. 
+  GET|HEAD  home ......................................................................................................... home › HomeController@index
+  GET|HEAD  login ......................................................................................... login › Auth\LoginController@showLoginForm
+  POST      login ......................................................................................................... Auth\LoginController@login
+  POST      logout .............................................................................................. logout › Auth\LoginController@logout
+  GET|HEAD  oauth/authorize ................................. passport.authorizations.authorize › Laravel\Passport › AuthorizationController@authorize
+  POST      oauth/authorize .............................. passport.authorizations.approve › Laravel\Passport › ApproveAuthorizationController@approve
+  DELETE    oauth/authorize ....................................... passport.authorizations.deny › Laravel\Passport › DenyAuthorizationController@deny
+  GET|HEAD  oauth/clients ....................................................... passport.clients.index › Laravel\Passport › ClientController@forUser
+  POST      oauth/clients ......................................................... passport.clients.store › Laravel\Passport › ClientController@store
+  PUT       oauth/clients/{client_id} ........................................... passport.clients.update › Laravel\Passport › ClientController@update
+  DELETE    oauth/clients/{client_id} ......................................... passport.clients.destroy › Laravel\Passport › ClientController@destroy
+  GET|HEAD  oauth/personal-access-tokens ................... passport.personal.tokens.index › Laravel\Passport › PersonalAccessTokenController@forUser
+  POST      oauth/personal-access-tokens ..................... passport.personal.tokens.store › Laravel\Passport › PersonalAccessTokenController@store
+  DELETE    oauth/personal-access-tokens/{token_id} ...... passport.personal.tokens.destroy › Laravel\Passport › PersonalAccessTokenController@destroy
+  GET|HEAD  oauth/scopes .............................................................. passport.scopes.index › Laravel\Passport › ScopeController@all
+  POST      oauth/token ......................................................... passport.token › Laravel\Passport › AccessTokenController@issueToken
+  POST      oauth/token/refresh ......................................... passport.token.refresh › Laravel\Passport › TransientTokenController@refresh
+  GET|HEAD  oauth/tokens .......................................... passport.tokens.index › Laravel\Passport › AuthorizedAccessTokenController@forUser
+  DELETE    oauth/tokens/{token_id} ............................. passport.tokens.destroy › Laravel\Passport › AuthorizedAccessTokenController@destroy
+  GET|HEAD  password/confirm ....................................................... password.confirm › Auth\ConfirmPasswordController@showConfirmForm
+  POST      password/confirm .................................................................................. Auth\ConfirmPasswordController@confirm
+  POST      password/email ......................................................... password.email › Auth\ForgotPasswordController@sendResetLinkEmail
+  GET|HEAD  password/reset ...................................................... password.request › Auth\ForgotPasswordController@showLinkRequestForm
+  POST      password/reset ...................................................................... password.update › Auth\ResetPasswordController@reset
+  GET|HEAD  password/reset/{token} ....................................................... password.reset › Auth\ResetPasswordController@showResetForm
+  GET|HEAD  register ......................................................................... register › Auth\RegisterController@showRegistrationForm
+  POST      register ................................................................................................ Auth\RegisterController@register
+  GET|HEAD  sanctum/csrf-cookie .................................................... sanctum.csrf-cookie › Laravel\Sanctum › CsrfCookieController@show
+
+                                                                                                                                   Showing [33] routes
+
